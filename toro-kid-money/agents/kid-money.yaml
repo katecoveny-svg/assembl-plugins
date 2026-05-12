@@ -43,10 +43,14 @@ privacy_act_2020:
 
 tikanga_check:
   framing:
-    - mahi
-    - koha
+    # Four pou (canon §6 — required by name)
+    - rangatiratanga
     - kaitiakitanga
     - manaakitanga
+    - whanaungatanga
+    # Descriptive concepts (plugin-specific, retained)
+    - mahi
+    - koha
   banned_terms_in_copy:
     - AI
     - artificial intelligence

@@ -42,6 +42,12 @@ privacy_act_2020:
 
 tikanga_check:
   framing:
+    # Four pou (canon §6 — required by name)
+    - rangatiratanga
+    - kaitiakitanga
+    - manaakitanga
+    - whanaungatanga
+    # Descriptive concepts (plugin-specific, retained)
     - whanau
     - hapori
   banned_terms_in_copy:
