@@ -1,0 +1,11 @@
+{
+  "name": "toro-kid-money",
+  "version": "0.1.0",
+  "description": "TŌRO sub-plugin — the viral wedge. Chore-and-allowance agent for NZ whānau. Tracks jobs, pays kids directly into their NZ bank account via CDR payment initiation, splits each payment three ways (Spend / Save / Give), and turns the weekly settle-up into something worth filming. Phase 1 ships pre-CDR with manual-transfer prompts; Phase 2 enables live payments once Assembl Ltd is an accredited requestor under the Customer and Product Data Act 2025.",
+  "kete": "toro",
+  "tier": "family",
+  "status": "scaffolded",
+  "agents": ["kid-money"],
+  "skills": ["kid-money-core", "three-jar-split", "nz-cdr-payments"],
+  "connectors": []
+}

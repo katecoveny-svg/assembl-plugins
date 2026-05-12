@@ -1,0 +1,11 @@
+{
+  "name": "toro-holiday-ideas",
+  "version": "0.1.0",
+  "description": "TŌRO sub-plugin — the four-times-a-year sticky feature. Generates draft NZ school-holiday plans in 10 minutes instead of two evenings: OSCAR-approved programmes, sports camps, library activities, council free stuff, day-trip ideas with driving time + cost, rainy-day backups by suburb. Auto-fires at the start of each school holiday window (term-planner tells it when). Sources are NZ-specific and regularly refreshed.",
+  "kete": "toro",
+  "tier": "family",
+  "status": "scaffolded",
+  "agents": ["holiday-ideas"],
+  "skills": ["holiday-ideas-core", "nz-holiday-sources", "preference-learning"],
+  "connectors": []
+}

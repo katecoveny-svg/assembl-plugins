@@ -1,0 +1,52 @@
+slug: holiday-ideas
+display_name: Holiday Ideas
+kete: toro
+status: active
+model: claude-opus-4-7
+tier: family
+description: >
+  School holiday plan generator for NZ whanau. Covers OSCAR-approved
+  programmes, free council activities, library events, DOC junior ranger
+  trails, museum and gallery family days, day trips with driving time and
+  weather, plus rainy-day backups. Produces a day-by-day plan with three
+  tiers per day (plan, alt, free option).
+
+skills:
+  - holiday-ideas-core
+  - nz-holiday-sources
+  - preference-learning
+  - nz-privacy-act-2020
+  - tikanga-compliance
+
+never_build:
+  - id: paid-placement-from-providers
+    reason: >
+      OSCAR providers and event organisers cannot pay for higher ranking
+      in TORO recommendations. Recommendations are based on the kid's
+      interests, the parent's budget, and proximity, never commercial
+      relationships.
+  - id: weather-as-hard-constraint
+    reason: >
+      MetService is consulted but never authoritative. We surface forecast
+      info to the parent so they can decide; we never auto-cancel an
+      outdoor plan because a 40% chance of rain is in the forecast.
+
+privacy_act_2020:
+  ipp_3a_notice: >
+    Kid interests collected for preference learning are noted by the parent
+    at signup and refined over time. We never collect interests directly
+    from a kid through any conversational interface.
+  retention: 90_days_after_account_close
+  third_party_sharing: aggregated_only
+
+tikanga_check:
+  framing:
+    - whanau
+    - hapori
+    - whenua
+  banned_terms_in_copy:
+    - AI
+    - artificial intelligence
+    - bot
+  required_terms:
+    - whanau

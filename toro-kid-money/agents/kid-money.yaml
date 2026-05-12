@@ -1,0 +1,57 @@
+slug: kid-money
+display_name: Kid Money
+kete: toro
+status: active
+model: claude-opus-4-7
+tier: family
+description: >
+  Chore-and-allowance agent for NZ families. Tracks jobs, pays kids directly
+  into their NZ bank account via CDR payment initiation, splits each payment
+  three ways (Spend / Save / Give), and turns the weekly settle-up into
+  something worth filming.
+
+skills:
+  - kid-money-core
+  - nz-cdr-payments
+  - three-jar-split
+  - nz-privacy-act-2020
+  - tikanga-compliance
+
+never_build:
+  - id: kid-direct-banking
+    reason: >
+      Kids never hold bank credentials in TORO. All payments are initiated
+      by the parent's CDR consent and land in the kid's existing bank
+      account. TORO never sees or stores kid bank login details.
+  - id: under-13-direct-signup
+    reason: >
+      Children under 13 cannot self-register. Parent creates and owns the
+      kid profile. Kids interact via SMS link only, no account.
+  - id: ml-training-on-child-data
+    reason: >
+      No data about minors is ever used for model training, telemetry, or
+      analytics aggregation. Explicit clause in T and Cs.
+
+privacy_act_2020:
+  ipp_3a_notice: >
+    When a parent forwards information about their child (school comms,
+    photos, names), TORO collects this from the parent on the child's
+    behalf. The parent is notified that this is happening at signup and
+    on each new source added.
+  retention: 90_days_after_account_close
+  third_party_sharing: none
+
+tikanga_check:
+  framing:
+    - mahi
+    - koha
+    - kaitiakitanga
+    - manaakitanga
+  banned_terms_in_copy:
+    - AI
+    - artificial intelligence
+    - bot
+  required_terms:
+    - whanau
+    - mahi
+    - koha

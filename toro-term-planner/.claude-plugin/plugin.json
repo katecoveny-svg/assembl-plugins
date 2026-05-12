@@ -1,0 +1,11 @@
+{
+  "name": "toro-term-planner",
+  "version": "0.1.0",
+  "description": "TŌRO sub-plugin — the free hook. Parents forward school newsletters, Hero notifications, sports WhatsApps, dance recital emails to term-<whanau-id>@toro.nz and get back a term-shaped plan: calendar events, payments, gear lists, permission slips, RSVPs, holiday transitions. NZ-specific knowledge layer covers Ministry of Education term dates, OSCAR providers, Hero/Seesaw/Skool Loop conventions, and the rhythms of NZ state, integrated, and private schools. Builds on the existing agentmail-inbound newsletter parser.",
+  "kete": "toro",
+  "tier": "family",
+  "status": "scaffolded",
+  "agents": ["term-planner"],
+  "skills": ["term-planner-core", "nz-school-calendar", "newsletter-parser"],
+  "connectors": []
+}

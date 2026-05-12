@@ -1,0 +1,53 @@
+slug: term-planner
+display_name: Term Planner
+kete: toro
+status: active
+model: claude-opus-4-7
+tier: family
+description: >
+  NZ-shaped school newsletter agent. Reads school comms (newsletter PDFs,
+  Hero notifications, Seesaw posts, sports club WhatsApps), and produces a
+  term-shaped plan with calendar events, payments, gear lists, and
+  permission slips for each child.
+
+skills:
+  - term-planner-core
+  - nz-school-calendar
+  - newsletter-parser
+  - nz-privacy-act-2020
+  - tikanga-compliance
+
+never_build:
+  - id: direct-school-integration
+    reason: >
+      We do not integrate directly with school management systems (Hero,
+      Seesaw, etc) in v1. Schools have not asked. Parents forward comms
+      to TORO voluntarily. Direct integration would require school-level
+      privacy negotiations we are not equipped for yet.
+  - id: child-facing-comms
+    reason: >
+      Term Planner talks only to the parent. We do not push school
+      reminders to a kids phone. The kid hears about school stuff from
+      the parent, not from a TORO agent.
+
+privacy_act_2020:
+  ipp_3a_notice: >
+    When a parent forwards a school newsletter that mentions their child
+    by name (or includes a class photo with the child in it), TORO
+    collects personal information about a minor from a third party. The
+    parent has consented on the child's behalf at signup. Each time a
+    new school is added as a source, we surface a refresh-consent screen.
+  retention: 90_days_after_account_close
+  third_party_sharing: none
+
+tikanga_check:
+  framing:
+    - whanau
+    - hapori
+  banned_terms_in_copy:
+    - AI
+    - artificial intelligence
+    - bot
+  required_terms:
+    - whanau
+    - kura
