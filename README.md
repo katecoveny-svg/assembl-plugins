@@ -32,14 +32,14 @@ TŌRO is the family-facing kete, separate from the industry packs. It is deliver
 | `toro-kid-money` | Viral wedge. Chores → photo proof → CDR-initiated payment to kid's bank → three-jar split (Spend / Save / Give, 10% to charity). | Phase 1 manual-transfer in weeks 1–6; Phase 2 CDR-enabled at ~week 14. |
 | `toro-holiday-ideas` | Four-times-a-year sticky feature. NZ-shaped school-holiday plans (OSCAR + free council + day trips + rainy-day backups). | Ships in time for July school holidays. |
 
-> The top-level `toro/` folder is a legacy stub from an earlier architecture (Professional Services). It is retained for git history but is no longer canonical. New TŌRO work lands in `toro-kid-money/`, `toro-term-planner/`, `toro-holiday-ideas/`.
+> The top-level `toro/` folder was a legacy stub from an earlier architecture (Professional Services). It was removed in PR #2. New TŌRO work lands in `toro-kid-money/`, `toro-term-planner/`, `toro-holiday-ideas/`.
 
 ## Install (Claude Code marketplace)
 
-Once the GitHub remote `assembl-co/assembl-plugins` exists:
+The canonical remote is **`katecoveny-svg/assembl-plugins`**:
 
 ```
-/plugin marketplace add assembl-co/assembl-plugins
+/plugin marketplace add katecoveny-svg/assembl-plugins
 /plugin install assembl-core@assembl-plugins
 /plugin install pikau@assembl-plugins             # freight & customs (pilot)
 /plugin install waihanga@assembl-plugins          # construction (pilot)
